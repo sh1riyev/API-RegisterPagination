@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{8235CEAD-15C6-4328-B5DF-70479883FAE2}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Service/Services/EducationService.cs">
+    <Files>
+      <File FileName="CourseApp/Controllers/EducationController.cs" Line="1" Column="1" />
+      <File FileName="Service/Services/Interface/IStudentService.cs" Line="1" Column="1" />
+      <File FileName="Service/Services/Interface/IEducationService.cs" Line="9" Column="3" />
+      <File FileName="Service/Services/EducationService.cs" Line="43" Column="27" />
+      <File FileName="Service/Helpers/PagedList.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CourseApp">
+            <Node name="CourseApp" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="Service">
+              <Node name="Helpers" expanded="True" />
+              <Node name="Services">
+                <Node name="EducationService.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CourseApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

@@ -2,6 +2,7 @@
 using System.Linq.Expressions;
 using Domain.Entity;
 using Repository.Repositories.Interface;
+using Service.Helpers;
 using Service.Services.Interface;
 
 namespace Service.Services
@@ -33,6 +34,14 @@ namespace Service.Services
         public async Task<Education> GetBy(Expression<Func<Education, bool>> predicate = null, params string[] includes)
         {
             return await _educationRepo.GetEntity(predicate, includes);
+        }
+
+        public async Task<PagedList<Education>> GetMembersAsync(UserParams userParams)
+        {
+            var query = _educationRepo.FindAll();
+            return await PagedList<Education>.CreateAsync(
+            query, userParams.PageNumber, userParams.PageSize);
+
         }
 
         public async Task<bool> IsExist(Expression<Func<Education, bool>> predicate = null)

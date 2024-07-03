@@ -2,6 +2,7 @@
 using System;
 using System.Linq.Expressions;
 using Domain.Common;
+using Service.Helpers;
 
 namespace Service.Services.Interfaces
 {
@@ -13,5 +14,7 @@ namespace Service.Services.Interfaces
         Task Delete(T entiy);
         Task Update(T entity);
         Task<bool> IsExist(Expression<Func<T, bool>> predicate = null);
+        Task<PagedList<T>> GetMembersAsync(UserParams userParams);
+
     }
 }

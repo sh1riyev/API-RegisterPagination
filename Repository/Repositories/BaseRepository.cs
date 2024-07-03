@@ -100,6 +100,11 @@ namespace Repository.Repositories
                 throw new Exception(ex.Message);
             }
         }
+
+        public IQueryable<T> FindAll()
+        {
+            return _context.Set<T>();
+        }
     }
 
 }

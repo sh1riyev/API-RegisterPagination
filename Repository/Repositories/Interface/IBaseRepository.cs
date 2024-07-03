@@ -11,6 +11,7 @@ namespace Repository.Repositories.Interface
         Task Delete(T entity);
         Task Update(T entity);
         Task<bool> IsExist(Expression<Func<T, bool>> predicate = null);
+        IQueryable<T> FindAll();
     }
 }
 

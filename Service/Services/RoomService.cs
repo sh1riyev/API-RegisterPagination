@@ -2,6 +2,7 @@
 using System.Linq.Expressions;
 using Domain.Entity;
 using Repository.Repositories.Interface;
+using Service.Helpers;
 using Service.Services.Interface;
 
 namespace Service.Services
@@ -33,6 +34,11 @@ namespace Service.Services
         public async Task<Room> GetBy(Expression<Func<Room, bool>> predicate = null, params string[] includes)
         {
            return await _roomRepo.GetEntity(predicate, includes);        }
+
+        public Task<PagedList<Room>> GetMembersAsync(UserParams userParams)
+        {
+            throw new NotImplementedException();
+        }
 
         public async Task<bool> IsExist(Expression<Func<Room, bool>> predicate = null)
         {

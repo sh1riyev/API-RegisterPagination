@@ -81,6 +81,13 @@ namespace CourseApp.Controllers
 
             return Ok(mappedQuery);
         }
-	}
+
+        [HttpGet]
+        public async Task<IActionResult> GetEducations([FromQuery] UserParams userParams)
+        {
+            var users = await _eudcationService.GetMembersAsync(userParams);
+            return Ok(users);
+        }
+    }
 }
 
